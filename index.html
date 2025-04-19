@@ -2,66 +2,106 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>InfraEdge Technologies</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url('https://cdn.pixabay.com/photo/2016/11/29/09/32/server-1867284_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #FFD700;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #eee;
+      margin-top: 0.5rem;
+    }
+
+    .buttons {
+      margin-top: 2rem;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .quote-btn {
+      background-color: #FFA500;
+    }
+
+    .consult-btn {
+      background-color: #FF4136;
+    }
+
+    section {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      border-radius: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1rem;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>InfraEdge Technologies</h1>
-      <p>Professional IT Services for Residential, Commercial, and Government Clients</p>
-      <div class="hero-buttons">
-        <a href="#quote" class="btn">Request a Quote</a>
-        <a href="#contact" class="btn-alt">Schedule a Consultation</a>
-      </div>
+  <header>
+    <h1>InfraEdge Technologies</h1>
+    <h2>Professional IT Services for Residential, Commercial, and Government Clients</h2>
+    <div class="buttons">
+      <a href="#quote" class="quote-btn">Request a Quote</a>
+      <a href="#consult" class="consult-btn">Schedule a Consultation</a>
     </div>
   </header>
 
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-grid">
-      <div class="service-card">
-        <h3>Cabling & Installation</h3>
-        <p>Complete setup for homes, offices, and data centers with clean, secure cable management.</p>
-      </div>
-      <div class="service-card">
-        <h3>Break & Fix</h3>
-        <p>Fast, reliable repair and troubleshooting. Ask about our monthly support plan!</p>
-      </div>
-      <div class="service-card">
-        <h3>Network Support</h3>
-        <p>Connectivity solutions, router setup, access points, switches, and diagnostics.</p>
-      </div>
-      <div class="service-card">
-        <h3>Desktop Support</h3>
-        <p>On-site and remote help for PCs, laptops, printers, and more.</p>
-      </div>
-    </div>
+  <section>
+    <h2>What We Do</h2>
+    <ul>
+      <li>Cabling & Installation</li>
+      <li>Break/Fix Service</li>
+      <li>Network Support</li>
+      <li>Desktop Support</li>
+      <li>Monthly Break/Fix Plan (like IT insurance)</li>
+    </ul>
   </section>
 
-  <section id="quote" class="quote-section">
-    <h2>Monthly Support Plan</h2>
-    <p>Subscribe to our affordable monthly plan to cover basic tech issues — like IT insurance for your equipment!</p>
-    <a href="#contact" class="btn">Sign Up Now</a>
+  <section id="quote">
+    <h2>Request a Quote</h2>
+    <p>Email us your needs and we’ll send back a detailed quote within 24 hours.</p>
   </section>
 
-  <section id="contact" class="contact-form">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="How can we help you?" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section id="consult">
+    <h2>Schedule a Consultation</h2>
+    <p>Let’s talk! Book a free virtual or on-site consultation to assess your IT setup.</p>
   </section>
 
-  <footer>
-    <p>&copy; 2025 InfraEdge Technologies. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <div class="footer">
+    &copy; 2025 InfraEdge Technologies. All rights reserved.
+  </div>
 </body>
 </html>
