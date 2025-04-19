@@ -5,44 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>InfraEdge Technologies</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="hero">
-    <div class="overlay">
+    <div class="overlay"></div>
+    <div class="hero-content">
       <h1>InfraEdge Technologies</h1>
-      <p>Smart IT solutions for Commercial, Residential, and Government Clients</p>
-      <a href="#quote" class="btn">Request a Quote</a>
+      <p>Professional IT Services for Residential, Commercial, and Government Clients</p>
+      <div class="hero-buttons">
+        <a href="#quote" class="btn">Request a Quote</a>
+        <a href="#contact" class="btn-alt">Schedule a Consultation</a>
+      </div>
     </div>
   </header>
 
   <section class="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>Cabling & Wiring (Residential & Commercial)</li>
-      <li>Hardware Installation & Setup</li>
-      <li>Break/Fix IT Support</li>
-      <li>Network Configuration & Support</li>
-      <li>Desktop and Remote Support</li>
-    </ul>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Cabling & Installation</h3>
+        <p>Complete setup for homes, offices, and data centers with clean, secure cable management.</p>
+      </div>
+      <div class="service-card">
+        <h3>Break & Fix</h3>
+        <p>Fast, reliable repair and troubleshooting. Ask about our monthly support plan!</p>
+      </div>
+      <div class="service-card">
+        <h3>Network Support</h3>
+        <p>Connectivity solutions, router setup, access points, switches, and diagnostics.</p>
+      </div>
+      <div class="service-card">
+        <h3>Desktop Support</h3>
+        <p>On-site and remote help for PCs, laptops, printers, and more.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="subscription">
-    <h2>Break/Fix Monthly Plan</h2>
-    <p>Think of it like IT insurance: pay a small monthly fee and enjoy free fixes for minor issues — quick, easy, and cost-effective.</p>
+  <section id="quote" class="quote-section">
+    <h2>Monthly Support Plan</h2>
+    <p>Subscribe to our affordable monthly plan to cover basic tech issues — like IT insurance for your equipment!</p>
+    <a href="#contact" class="btn">Sign Up Now</a>
   </section>
 
-  <section class="quote" id="quote">
-    <h2>Request a Quote</h2>
-    <p>Let us know what you need. We'll get back to you fast with a clear, simple quote.</p>
-    <a href="#contact" class="btn-alt">Schedule a Consultation</a>
-  </section>
-
-  <section class="contact" id="contact">
+  <section id="contact" class="contact-form">
     <h2>Contact Us</h2>
     <form>
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Tell us what you need..."></textarea>
+      <textarea placeholder="How can we help you?" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
